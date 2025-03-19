@@ -45,30 +45,35 @@ mohsin651-pdf_rag_chatbot/
 Follow these steps to install and run the project:
 
 ### 1. Clone the Repository
+---
 ```bash
 git clone https://github.com/mohsin651/pdf_rag_chatbot.git
 cd pdf_rag_chatbot
 ```
 
 ### 2. Create a Virtual Environment
+---
 ```bash
 python -m venv venv
 source venv/bin/activate  # On macOS/Linux
 .venv\Scripts\activate     # On Windows
 ```
 ### 3. Install Dependencies
+---
 Install required Python libraries from requirements.txt:
 ```
 pip install -r requirements.txt
 ```
 
 ### 4. Set Up API Key
+---
 The chatbot requires a Groq API Key to function:
 
 - Obtain an API key from Groq from [here](https://console.groq.com/keys)
 - Run the app and enter the API key in the sidebar
 
 ### 5. Running the Application
+---
 To launch the Streamlit app, run:
 ```
 streamlit run app.py
@@ -76,7 +81,7 @@ streamlit run app.py
 Then, open the provided localhost URL in your browser.
 
 ### 6. How It Works
-
+---
 **Upload a PDF**: Select a PDF file to upload
 
 **Processing**: The document is split into chunks, vectorized, and stored in ChromaDB
@@ -88,7 +93,7 @@ Then, open the provided localhost URL in your browser.
 **New File**: Previous ChatMemory is removed upon new PDF Processing
 
 ### 7. Troubleshooting
-
+---
 **Invalid API Key**: Ensure your API key is correct and set as an environment variable
 
 **PDF Not Processing**: Check that the PDF format is supported and re-upload
@@ -97,7 +102,7 @@ Then, open the provided localhost URL in your browser.
 
 
 ### 8. Future Enhancements
-
+---
 This prototype demonstrates the core functionality of a PDF RAG chatbot, but there are several ways to enhance its performance and capabilities:
 
 #### Advanced LLM Integration
@@ -132,7 +137,7 @@ This prototype demonstrates the core functionality of a PDF RAG chatbot, but the
 - Implement metadata filtering and advanced search
 
 ### Acknowledgement
-
+---
 The code debugging was done with the help of ChatGPT, and comments were refined/corrected (but not generated) by an LLM.
 
 
