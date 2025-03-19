@@ -6,7 +6,7 @@ from rag.rag import create_rag_chain, add_message
 from langchain_community.chat_message_histories import ChatMessageHistory
 import uuid
 
-st.set_page_config(page_title="PDF RAG Chatbot", page_icon="📚", layout="wide")
+st.set_page_config(page_title="PDF RAG Chatbot", page_icon="📖", layout="wide")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -21,7 +21,7 @@ if "session_id" not in st.session_state:
 
 def main():
     """Main function for the Streamlit app."""
-    st.title("📚 PDF RAG Chatbot")
+    st.title("📖 PDF RAG Chatbot")
     
     # Check if API key is configured
     if not configure_api_keys():
@@ -65,7 +65,7 @@ def main():
     # Chat input, if the uploaded pdf is processed
     if st.session_state.pdf_processed:
         # Prompting user to enter a new query
-        user_query = st.chat_input("Ask a question about your PDF...")
+        user_query = st.chat_input("Ask a question about your PDF and be specific in your query for high relevancy")
         
         if user_query:
             # Add user message 
