@@ -25,7 +25,7 @@ def main():
     if not configure_api_keys():
         return
     
-    with st.sidebar:
+    with st.sidebar:  
         st.header("Upload Document")
         uploaded_file = st.file_uploader("Choose a PDF file", type="pdf")
         if uploaded_file is not None:
