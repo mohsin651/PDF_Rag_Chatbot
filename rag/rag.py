@@ -29,7 +29,7 @@ def create_rag_chain(retriever):
     """Create the RAG chain with the retriever."""
     # Create the prompt template
     template = """
-    Answer the question strictly based on the provided context. 
+    Answer the question based on the provided context. 
     If the context does not contain enough information to provide a confident answer, respond with: 'I don't have enough information to answer this question based on the given context, 
     and ask the user to enter specific query related to the pdf' 
     However, if you can answer the question using general knowledge, provide a response afterward, clearly indicating that it is not derived from the provided context. 
