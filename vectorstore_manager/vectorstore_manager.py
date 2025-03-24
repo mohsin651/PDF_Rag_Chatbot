@@ -17,6 +17,7 @@ def create_retriever():
                 persist_dir = st.session_state.persist_dir
                 collection_name = f"pdf_collection_{st.session_state.session_id}"
                 
+                # vectordb creation
                 vectorstore = Chroma(
                     persist_directory=persist_dir,
                     embedding_function=embedding_function,
